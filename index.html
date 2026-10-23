@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moss &amp; Frame | Image Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="#" class="brand">Moss &amp; Frame</a>
+        <p>Find a little inspiration in every image.</p>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <p class="eyebrow">YOUR VISUAL DISCOVERY SPACE</p>
+            <h1>What are you looking for?</h1>
+            <p class="intro">
+                Explore the world, one image at a time.
+            </p>
+
+            <form class="search-form">
+                <label for="search-input">Search for images</label>
+
+                <div class="search-controls">
+                    <input
+                        type="search"
+                        id="search-input"
+                        placeholder="Try mountain landscapes..."
+                    >
+                    <button type="button" id="search-button">
+                        Search
+                    </button>
+                </div>
+            </form>
+
+            <div class="quick-picks">
+                <span>Explore:</span>
+                <button type="button" class="chip">Nature</button>
+                <button type="button" class="chip">Architecture</button>
+                <button type="button" class="chip">Wildlife</button>
+                <button type="button" class="chip">Travel</button>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-heading">
+                <h2>Your gallery</h2>
+                <p id="result-count">Your results will appear here</p>
+            </div>
+
+            <p id="empty-state">
+                <span class="empty-icon" aria-hidden="true">✳</span>
+                <strong>Your next discovery starts here.</strong>
+                <span>Enter a topic above to begin exploring.</span>
+            </p>
+
+            <div id="results" class="results-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for the curious. Designed for discovery.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
